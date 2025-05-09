@@ -1,4 +1,4 @@
-# SQL : Level one
+# SQL : Level 2
 
 - Who has been assigned a project has a developer ?
 

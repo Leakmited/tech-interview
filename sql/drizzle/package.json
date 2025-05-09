@@ -4,9 +4,6 @@
   "description": "## How to run?",
   "main": "index.js",
   "scripts": {
-    "db:start": "docker compose up",
-    "db:push": "drizzle-kit push",
-    "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio --host 0.0.0.0 --port 3000"
   },
   "devDependencies": {
