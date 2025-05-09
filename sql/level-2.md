@@ -1,0 +1,7 @@
+# SQL : Level one
+
+- Who has been assigned a project has a developer ?
+
+- Write a SQL query that show who has been assigned to which project ?
+
+- Which users has the most project assigned to him ?

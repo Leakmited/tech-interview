@@ -11,7 +11,6 @@ docker compose up
 It should create 2 things:
 
 - Postgres database
-- Adminrer
 
 ### Init database
 
