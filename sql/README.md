@@ -5,10 +5,11 @@
 ### Install tools
 
 ```shell
-docker-compose up
+docker compose up
 ```
 
 It should create 2 things:
+
 - Postgres database
 - Adminrer
 
