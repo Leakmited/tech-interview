@@ -4,8 +4,6 @@ services:
   db:
     image: postgres:15
     restart: always
-    ports:
-      - 5432:5432
     container_name: pg_database
     environment:
       POSTGRES_USER: myuser
@@ -14,6 +12,26 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - drizzle_network
+
+  drizzle:
+    build:
+      context: ./drizzle
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgres://myuser:mypassword@db:5432/mydb
+    ports:
+      - "4983:3000"
+    command: npm run db:studio
+    depends_on:
+      - db
+    networks:
+      - drizzle_network
 
 volumes:
   db_data:
+
+networks:
+  drizzle_network:
+    driver: bridge
