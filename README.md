@@ -22,5 +22,5 @@ We will ask you to switch to the next category
 | Svelte     | 30            |
 
 [SQL](./sql/README.md)
-[Typescript](./typescript/src/README.md)
+[Typescript](./typescript/README.md)
 [Svelte](./svelte/README.md)
