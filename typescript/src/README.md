@@ -15,12 +15,5 @@ You can/must ask question
 
 We will ask you to switch to the next category
 
-| Category   | Time(minutes) |
-| ---------- | ------------- |
-| SQL        | 10            |
-| Typescript | 10            |
-| Svelte     | 30            |
-
-[SQL](./sql/README.md)
-[Typescript](./typescript/src/README.md)
-[Svelte](./svelte/README.md)
+[Level 1](./level-1.ts)
+[Level 2](./level-2.ts)
