@@ -4,7 +4,7 @@
   "description": "## How to run?",
   "main": "index.js",
   "scripts": {
-    "db:studio": "drizzle-kit studio --host 0.0.0.0 --port 3000"
+    "db:studio": "drizzle-kit studio --host 0.0.0.0 --port 3209"
   },
   "devDependencies": {
     "drizzle-kit": "^0.30.2"

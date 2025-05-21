@@ -9,6 +9,8 @@ services:
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: mydb
+    ports:
+      - "3208:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -22,7 +24,7 @@ services:
     environment:
       DATABASE_URL: postgres://myuser:mypassword@db:5432/mydb
     ports:
-      - "4983:3000"
+      - "4983:3209"
     command: npm run db:studio
     depends_on:
       - db
