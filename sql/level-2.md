@@ -1,6 +1,6 @@
 # SQL : Level 2
 
-- Who has been assigned a project has a developer ?
+- Who has been assigned a project as a developer ?
 
 - Write a SQL query that show who has been assigned to which project ?
 
